@@ -13,7 +13,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --verbose --release
+    - shell: bash
+      run: |
+        mkdir package
+        cp ./target/release/hello_ci ./package
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: executable
+        path: ./package
     - name: Run tests
       run: cargo test --verbose
     - name: Build docs
