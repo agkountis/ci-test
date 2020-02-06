@@ -17,9 +17,7 @@ jobs:
     - shell: bash
       run: |
         mkdir package
-        ls -la
-        ls -la target/release
-        cp target/release/hello_ci package
+        cp target/release/ci_test package
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       with:
