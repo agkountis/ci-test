@@ -10,9 +10,7 @@
     ["@semantic-release/exec", {
       "prepare": "cargo bump ${nextRelease.version}"
     }],
-    ["@semantic-release/git", {
-      "assets": ["Cargo.toml"]
-    }],
+    "@semantic-release/git",
     "@semantic-release/github"
   ]
 }
