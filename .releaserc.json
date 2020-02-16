@@ -7,13 +7,10 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    ["@semantic-release/exec", {
-      "prepare": "cargo bump ${nextRelease.version}"
-    }],
-    "@semantic-release/github",
     ["@semantic-release/git", {
       "assets": ["Cargo.toml"],
       "message": "chore(release): Bumping Cargo.toml version to ${nextRelease.version} [skip ci]"
-    }]
+    }],
+    "@semantic-release/github"
   ]
 }
