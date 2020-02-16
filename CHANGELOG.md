@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/agkountis/ci-test/compare/v2.0.0...v2.0.1) (2020-02-16)
+
+
+### Bug Fixes
+
+* **semrel:** Added dependency. ([758e19f](https://github.com/agkountis/ci-test/commit/758e19f4e49ae3cdba5d9cef362527f7faa09cb5))
+
 # [2.0.0](https://github.com/agkountis/ci-test/compare/v1.1.0...v2.0.0) (2020-02-16)
 
 
