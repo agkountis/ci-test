@@ -9,7 +9,11 @@
     "@semantic-release/changelog",
     "@semantic-release/github",
     ["@semantic-release/exec", {
-      "prepareCmd": "cargo bump ${nextRelease.version}"
+      "prepareCmd": "cargo bump ${nextRelease.version} --manifest-path /home/runner/work/ci-test/ci-test/Cargo.toml"
+    }],
+    ["@semantic-release/git", {
+      "assets": ["/home/runner/work/ci-test/ci-test/Cargo.toml"],
+      "message": "Release <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\\n\\n<%= nextRelease.notes %>"
     }]
   ]
 }
