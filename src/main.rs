@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, CI!");
+    println!("Hello, CI! Version bump!");
 }
