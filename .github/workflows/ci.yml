@@ -31,7 +31,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
-#    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Chekout code
         uses: actions/checkout@v2
@@ -45,6 +45,6 @@ jobs:
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release --dry-run
+        run: npx semantic-release
 
 
