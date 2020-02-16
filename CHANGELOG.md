@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/agkountis/ci-test/compare/v2.0.1...v2.0.2) (2020-02-16)
+
+
+### Bug Fixes
+
+* **semrel:** Changes cargo bump exec stage ([3eb4a9d](https://github.com/agkountis/ci-test/commit/3eb4a9db35b886f3a9d87b2f1df9e2292884aca1))
+* **semrel:** Tests bumping cargo version ([c4e6e39](https://github.com/agkountis/ci-test/commit/c4e6e39657d85229635784efaa0aadead7b6f91f))
+
 ## [2.0.1](https://github.com/agkountis/ci-test/compare/v2.0.0...v2.0.1) (2020-02-16)
 
 
