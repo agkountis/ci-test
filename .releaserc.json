@@ -8,7 +8,7 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     ["@semantic-release/exec", {
-      "verifyConditionsCmd": "cargo bump ${nextRelease.version}"
+      "verifyRelease": "cargo bump ${nextRelease.version}"
     }],
     "@semantic-release/git",
     "@semantic-release/github"
