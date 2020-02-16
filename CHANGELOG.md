@@ -1,3 +1,10 @@
+## [2.0.8](https://github.com/agkountis/ci-test/compare/v2.0.7...v2.0.8) (2020-02-16)
+
+
+### Bug Fixes
+
+* **semrel:** Fix ([fb4685d](https://github.com/agkountis/ci-test/commit/fb4685d1d30cf31d3c4e5af6a5651fd1fe4c3472))
+
 ## [2.0.2](https://github.com/agkountis/ci-test/compare/v2.0.1...v2.0.2) (2020-02-16)
 
 
