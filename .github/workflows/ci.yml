@@ -28,17 +28,20 @@ jobs:
       run: cargo doc --no-deps
 
   release:
+    needs: build
     runs-on: ubuntu-latest
     container:
       image: node:latest
 
     if: github.ref == 'refs/heads/master'
     steps:
+      - name: Chekout code
+        uses: actions/checkout@v2
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install @semantic-release/changelog -D
-          npx semantic-release
+          npx semantic-release --dry-run
 
 
