@@ -1,4 +1,7 @@
 {
+  "debug": true,
+  "ci": true,
+  "repositoryUrl": "https://github.com/agkountis/ci-test",
   "branches" : ["master"],
   "plugins": [
     "@semantic-release/commit-analyzer",
