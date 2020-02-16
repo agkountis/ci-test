@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/agkountis/ci-test/compare/v1.1.0...v2.0.0) (2020-02-16)
+
+
+### Features
+
+* **semrel:** Breaking change!. ([8053c96](https://github.com/agkountis/ci-test/commit/8053c9681001c2e93e6a7463629ac503cf861f4e))
+
+
+### BREAKING CHANGES
+
+* **semrel:** The universe just broke!
+
 # [1.1.0](https://github.com/agkountis/ci-test/compare/v1.0.1...v1.1.0) (2020-02-16)
 
 
