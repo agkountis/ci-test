@@ -47,7 +47,9 @@ jobs:
         with:
           rust-version: stable
       - shell: bash
-        run: cargo install cargo-bump
+        run: |
+          cargo install cargo-bump
+          cargo bump 2.0.10
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
