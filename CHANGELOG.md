@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/agkountis/ci-test/compare/v1.0.1...v1.1.0) (2020-02-16)
+
+
+### Features
+
+* **semrel:** Test minor version bump. ([17dac0c](https://github.com/agkountis/ci-test/commit/17dac0ca6f8295643b408e8c7c1f1b0de0e27b37))
+
 ## [1.0.1](https://github.com/agkountis/ci-test/compare/v1.0.0...v1.0.1) (2020-02-16)
 
 
