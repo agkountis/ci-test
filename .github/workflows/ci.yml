@@ -37,11 +37,13 @@ jobs:
     steps:
       - name: Chekout code
         uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm install @semantic-release/changelog @semantic-release/git -D
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm install @semantic-release/changelog @semantic-release/git -D
-          npx semantic-release --dry-run
+        run: npx semantic-release --dry-run
 
 
