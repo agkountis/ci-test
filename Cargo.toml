@@ -1,6 +1,6 @@
 [package]
 name = "ci_test"
-version = "0.1.0"
+version = "2.0.15"
 authors = ["Angelos Gkountis <agelosbb@gmail.com>"]
 edition = "2018"
 
