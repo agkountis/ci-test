@@ -49,7 +49,7 @@ jobs:
       - shell: bash
         run: |
           cargo install cargo-bump
-          cargo bump 2.0.10 --manifest-path /home/runner/work/ci-test/ci-test/Cargo.toml
+          cargo bump 2.0.10
           cat Cargo.toml
       - name: semrel
         env:

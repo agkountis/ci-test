@@ -7,13 +7,12 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/github",
-    ["@semantic-release/exec", {
-      "prepareCmd": "cargo bump ${nextRelease.version} --manifest-path /home/runner/work/ci-test/ci-test/Cargo.toml"
-    }],
     ["@semantic-release/git", {
-      "assets": ["/home/runner/work/ci-test/ci-test/Cargo.toml"],
-      "message": "Release <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\\n\\n<%= nextRelease.notes %>"
-    }]
+      "assets": ["/home/runner/work/ci-test/ci-test/Cargo.toml"]
+    }],
+    ["@semantic-release/exec", {
+      "prepareCmd": "cargo bump ${nextRelease.version} --manifest-path /home/runner/work/ci-test/ci-test/Cargo.toml > Cargo.toml"
+    }],
+    "@semantic-release/github"
   ]
 }
