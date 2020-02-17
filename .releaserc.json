@@ -7,12 +7,11 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    ["@semantic-release/git", {
-      "assets": ["/home/runner/work/ci-test/ci-test/Cargo.toml"]
-    }],
     ["@semantic-release/exec", {
-      "prepareCmd": "cargo bump ${nextRelease.version}"
+      "prepareCmd": "cargo bump ${nextRelease.version}",
+      "publishCmd": "cat Cargo.toml"
     }],
+    "@semantic-release/git",
     "@semantic-release/github"
   ]
 }

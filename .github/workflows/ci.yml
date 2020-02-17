@@ -38,10 +38,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 13
       - name: Install dependencies
         run: |
-          npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
+          npm install @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
       - name: Setup Rust
         uses: hecrj/setup-rust-action@v1
         with:
@@ -52,6 +52,6 @@ jobs:
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release@15
 
 
