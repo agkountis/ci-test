@@ -52,6 +52,6 @@ jobs:
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release@15.10.6
+        run: npx semantic-release@17.0.3
 
 
