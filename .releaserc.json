@@ -8,10 +8,11 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     ["@semantic-release/exec", {
-      "prepareCmd": "cargo bump ${nextRelease.version}",
-      "publishCmd": "cat Cargo.toml"
+      "prepareCmd": "cargo bump ${nextRelease.version} && cat Cargo.toml"
     }],
-    "@semantic-release/git",
+    ["@semantic-release/git", {
+      "assets": "Cargo.toml"
+    }],
     "@semantic-release/github"
   ]
 }

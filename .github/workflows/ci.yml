@@ -41,7 +41,7 @@ jobs:
           node-version: 13
       - name: Install dependencies
         run: |
-          npm install @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
+          npm install @semantic-release/changelog @semantic-release/git@9 @semantic-release/exec@5 -D
       - name: Setup Rust
         uses: hecrj/setup-rust-action@v1
         with:
