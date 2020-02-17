@@ -49,8 +49,6 @@ jobs:
       - shell: bash
         run: |
           cargo install cargo-bump
-          cargo bump 2.0.10
-          cat Cargo.toml
       - name: semrel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
