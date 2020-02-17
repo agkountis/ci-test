@@ -11,7 +11,7 @@
       "assets": ["/home/runner/work/ci-test/ci-test/Cargo.toml"]
     }],
     ["@semantic-release/exec", {
-      "prepareCmd": "cargo bump ${nextRelease.version} --manifest-path /home/runner/work/ci-test/ci-test/Cargo.toml"
+      "prepareCmd": "cargo bump ${nextRelease.version}"
     }],
     "@semantic-release/github"
   ]
