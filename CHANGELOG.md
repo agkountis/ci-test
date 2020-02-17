@@ -1,3 +1,13 @@
+## [2.0.14](https://github.com/agkountis/ci-test/compare/v2.0.13...v2.0.14) (2020-02-17)
+
+
+### Bug Fixes
+
+* **semrel:** Bump patch ([845175c](https://github.com/agkountis/ci-test/commit/845175c9d56c5317b9b9f5ed95553339e5018cc6))
+* **semrel:** Bump version ([4aa03b5](https://github.com/agkountis/ci-test/commit/4aa03b592eb3cd9884146a91f747da167da7def4))
+* **semrel:** Version ([367e8b0](https://github.com/agkountis/ci-test/commit/367e8b082155c2da80167427591dd320cc1adb58))
+* **semrel:** Version ([8926924](https://github.com/agkountis/ci-test/commit/8926924430faf64b34c5a8cea93dd5deb2be35f3))
+
 ## [2.0.8](https://github.com/agkountis/ci-test/compare/v2.0.7...v2.0.8) (2020-02-16)
 
 
